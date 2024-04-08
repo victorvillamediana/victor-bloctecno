@@ -1,0 +1,173 @@
+/* Hoja de estilos CSS de EJEMPLO DE PÁGINA RESPONSIVE */
+    body {
+      width:100%;
+      margin: 0 auto;
+      background-image : url(../static/imagenes/fondo.jpg);
+      font-family: "Consolas","Open Sans", "Arial", "Helvetica", sans-serif;
+      color: #0fff26;
+      font-size:12px;
+    }
+    h1 {
+      margin-top:0px;
+      margin-bottom:0px;
+      letter-spacing: -2px;
+      margin-left: 10px;
+      padding-left: 50px;
+      background: transparent url(../static/imagenes/logoVerde.png) no-repeat left center;
+      font-size: 35px;
+    }
+    ul{
+      margin-top:0px;
+      margin-left:35px; 
+    }
+    li{
+      display: inline;
+      padding: 20px;
+    }
+    a{
+      color:#0fff26;
+    }
+    h2 {
+      text-align:center;
+      text-shadow: rgb(19, 17, 17) 3px 3px;
+      margin-bottom: 8px;
+      font-size: 25px;
+      letter-spacing: 4px;
+    }
+    .imagenes {
+     display: flex;
+     align-items: center;
+     flex-wrap: wrap;
+     justify-content: space-around;
+     margin: 0 20px;
+    } 
+    img {
+      width: 22%;
+      padding:5px;
+      background-color: #0fff26;
+    }
+    form {
+      background-color: white;
+      margin:10px;
+      padding:20px;
+      border: solid 4px black;
+      color:black;
+    }
+    legend {
+      font-size: 2em;
+      text-shadow: #00000023 3px 3px;
+      }
+    label {
+      display:block;
+    }
+    fieldset {
+      float:left;
+      margin: 25px;
+    }
+    #enviar {
+      display:block;
+      clear:both;
+      font-size: 20px;
+      width: 140px;
+      height: 50px;
+      color: white;
+      background-color: green;
+      border-radius: 11px;
+    }
+    .sola {
+      float: left;
+      margin: 0 20px 20px 20px;
+      width: 20%;
+    }
+    .otro {
+      clear:both;
+      margin: 20px;
+    }
+    footer {
+      padding:30px;
+      margin-top:50px;
+      background-color: #0fff26;
+      border-top: solid 4px black;
+      color:black;
+    }
+    .inicio {
+      text-transform: uppercase;
+      text-decoration: underline;
+      font-weight: bold;
+      /* Hay que definir la propiedad color en la clase .inicio porque aunque también
+      herede el color del contenedor footer, de quien realmente hereda que machaca
+      el anterior, es de contenedor a */
+      color:black;
+    }
+/* Punto de ruptura o breakpoint para tablets */
+@media (min-width: 768px) {
+  body {
+      color: #ffff13;
+      font-size:14px;
+    }
+    h1 {
+      margin-left: 20px;
+      padding-left: 60px;
+      background: transparent url(../static/imagenes/logoAmarillo.png) no-repeat left center;
+      font-size: 50px;
+    }
+    ul{
+      margin-left:60px;
+    }
+    li{
+      padding: 30px;
+    }
+    a{
+      color:#ffff13;
+    }
+    h2 {
+      font-size: 40px;
+      letter-spacing: 12px;
+      }
+    img {
+      padding:8px;
+      background-color: #ffff13; 
+    }
+    .sola {
+      width: 15%;
+    }
+    footer {
+      background-color: #ffff13;
+    }
+}
+/* Punto de ruptura o breakpoint para escritorios */
+@media (min-width: 992px) {   
+    body {
+      color: white;
+      font-size:16px;
+    }
+    h1 {
+      margin-left: 30px;
+      padding-left: 70px;
+      background: transparent url(../static/imagenes/logoBlanco.png) no-repeat left center;
+      font-size: 60px;
+    }
+    ul{
+      margin-left:70px;
+    }
+    li{
+      padding: 50px;
+    }
+    a{
+      color:white;
+    }
+    h2 {
+      font-size: 50px;
+      letter-spacing: 16px;
+    }
+    img {
+      padding:10px;
+      background-color: white;
+    }
+    .sola {
+      width: 10%;
+    }
+    footer {
+      background-color: white;
+    }
+}
